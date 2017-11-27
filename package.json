@@ -1,0 +1,17 @@
+{
+  "name": "dok-ts-jwt-service",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/kalyuk/dok-ts-jwt-service.git",
+  "author": "Dmitry Kalyuk",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "prepublish": "yarn build"
+  },
+  "dependencies": {
+    "dok-ts": "^1.0.10",
+    "jsonwebtoken": "^8.1.0",
+    "typescript": "^2.6.2"
+  }
+}
