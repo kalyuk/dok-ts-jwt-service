@@ -7,3 +7,7 @@ src
 nodemon.json
 tsconfig.json
 tslint.json
+JwtService.ts
+index.ts
+*.d.ts
+*.js

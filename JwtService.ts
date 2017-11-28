@@ -1,4 +1,4 @@
-import jwt from 'jsonwebtoken';
+import * as jwt from 'jsonwebtoken';
 import {getService} from 'dok-ts';
 import {BaseService} from 'dok-ts/base/BaseService';
 
