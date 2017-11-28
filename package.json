@@ -1,6 +1,6 @@
 {
   "name": "dok-ts-jwt-service",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "index.js",
   "repository": "https://github.com/kalyuk/dok-ts-jwt-service.git",
   "author": "Dmitry Kalyuk",
