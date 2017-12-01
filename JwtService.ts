@@ -1,6 +1,7 @@
 import * as jwt from 'jsonwebtoken';
 import {getService} from 'dok-ts';
 import {BaseService} from 'dok-ts/base/BaseService';
+import {BaseError} from 'dok-ts/base/BaseError';
 
 export class JwtService extends BaseService {
 
@@ -21,10 +22,10 @@ export class JwtService extends BaseService {
   }
 
   public verify(token) {
-    return new Promise((resolve, reject) => {
+    return new Promise((resolve) => {
       jwt.verify(token, this.config.salt, (err, decoded) => {
         if (err) {
-          reject('sec.access_token_invalid');
+          throw new BaseError(403, 'global.permission_deny')
         }
         resolve(decoded);
       });

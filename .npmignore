@@ -8,4 +8,5 @@ nodemon.json
 tsconfig.json
 tslint.json
 JwtService.ts
+JwtBehavior.ts
 index.ts
