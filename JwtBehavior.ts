@@ -12,6 +12,11 @@ export async function JwtBehavior(ctx) {
     throw new BaseError(403, 'global.permission_deny')
   }
 
-  ctx.set('jwt', await jwtService.verify(headers.authorization.split(' ')[1]))
+  const token = headers.authorization.split(' ')[1];
+
+  ctx.set('jwt', {
+    token,
+    payload: await jwtService.verify(token)
+  })
 
 }
